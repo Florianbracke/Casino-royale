@@ -1,41 +1,67 @@
+//bellsprout variables
 var timesGRASShasbeencalled = [];
+var timesbellsproutlost= [];
+
+//goldeen variables
 var timesWATERhasbeencalled = [];
+var timesgoldeenlost= [];
+
+//vulpix variables
 var timesFIREhasbeencalled = [];
+var timesvulpixlost= [];
 
-
+// BELLSPROUT ===============================================================================================
+// function & variables
  function grass(){ 
-    randomNumber = Math.floor(Math.random() * 3) + 1;
+     randomNumber = Math.floor(Math.random() * 3) + 1;
      timesGRASShasbeencalled.push("a");
-     console.log(timesGRASShasbeencalled.length + " grass moves");
 
+     bellsproutpickamount = timesGRASShasbeencalled.length;
+     document.getElementById("bellsproutpickamount").innerHTML = Number(bellsproutpickamount) ;
+    
+     if (bellsprouthp === Number(0)){ 
+     console.log("fuck yes you ded mofo")}
+// -------------------------------- 
+// ---statements
  if (randomNumber == 1) {
      document.getElementById("yourpick").innerHTML ="picked Bellsprout";
      document.getElementById("pcpick").innerHTML = "picked Bellsprout";
      document.getElementById("battle").innerHTML = "with grass vs grass, but not much happened!";
  }
+ 
  else if (randomNumber == 2){
     document.getElementById("yourpick").innerHTML ="picked Bellsprout";
     document.getElementById("pcpick").innerHTML = "picked Goldeen";
     document.getElementById("battle").innerHTML = "with grass vs water, Goldeen took damage!";
  }  
- else if (randomNumber == 3){
+ else if (randomNumber == 3){ //here player loses
+    timesbellsproutlost.push("a");
+    document.getElementById("bellsprouthp").innerHTML = bellsprouthp = Number(6- (timesbellsproutlost.length)) ;
+
     document.getElementById("yourpick").innerHTML ="picked Bellsprout";
     document.getElementById("pcpick").innerHTML = "picked Vulpix";
-    document.getElementById("battle").innerHTML = "with grass vs fire, Bellsprout took damage!";
- }    
+    document.getElementById("battle").innerHTML = "with grass vs fire, Bellsprout took damage!";    
+ }   
+}
 
- }
 
- 
+ // GOLDEEN ===============================================================================================
+ // function & variables
  function water(){ 
     randomNumber = Math.floor(Math.random() * 3) + 1;
     timesWATERhasbeencalled.push("b");
-    console.log(timesWATERhasbeencalled.length + " water moves");
-    
-if (randomNumber == 1) {
+
+    goldeenpickamount = timesWATERhasbeencalled.length;
+    document.getElementById("goldeenpickamount").innerHTML = Number(goldeenpickamount) ;
+// --------------------------------
+// ---statements
+if (randomNumber == 1) { //here player loses
+    timesgoldeenlost.push("a");
+    document.getElementById("goldeenhp").innerHTML = Number(6- (timesgoldeenlost.length)) ;
     document.getElementById("yourpick").innerHTML ="picked Goldeen";
     document.getElementById("pcpick").innerHTML = "picked Bellsprout";
     document.getElementById("battle").innerHTML = "with water vs grass, Goldeen took damage";
+    
 }
 else if (randomNumber == 2){
    document.getElementById("yourpick").innerHTML ="picked Goldeen";
@@ -46,26 +72,35 @@ else if (randomNumber == 3){
    document.getElementById("yourpick").innerHTML ="picked Goldeen";
    document.getElementById("pcpick").innerHTML = "picked Vulpix";
    document.getElementById("battle").innerHTML = "with water vs fire, Vulpix fainted! Smart move!";
-}}
+ }
+}
 
 
+// VULPIX===============================================================================================
+// function & variables
 function fire(){ 
     randomNumber = Math.floor(Math.random() * 3) + 1;
     timesFIREhasbeencalled.push("c");
-    amountvulpixplay = console.log(timesFIREhasbeencalled.length + " fire moves");
-    amountvulpixhp = Number(amountvulpixplay);
-    console.log(amountvulpixhp); 
 
+    vulpixpickamount = timesFIREhasbeencalled.length;
+    document.getElementById("vulpixpickamount").innerHTML = Number(vulpixpickamount) ;
+// --------------------------------
+// ---statements
 if (randomNumber == 1) {
     document.getElementById("yourpick").innerHTML ="picked Vulpix";
     document.getElementById("pcpick").innerHTML = "picked Bellsprout";
     document.getElementById("battle").innerHTML = "with fire vs grass, Bellsprout took damage! Smart move!";
     
 }
-else if (randomNumber == 2){
+else if (randomNumber == 2){ //here player loses
+   timesvulpixlost.push("a");
+   document.getElementById("vulpixhp").innerHTML = Number(6- (timesvulpixlost.length)) ;
+
    document.getElementById("yourpick").innerHTML ="picked Vulpix";
    document.getElementById("pcpick").innerHTML = "picked Goldeen";
    document.getElementById("battle").innerHTML = "with fire vs water, Vulpix took damage!";
+  
+   
     
 }  
 else if (randomNumber == 3){

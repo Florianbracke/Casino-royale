@@ -49,9 +49,9 @@
   button {background: rgb(131, 251, 255);
     background: radial-gradient(circle, rgb(144, 250, 253) 0%, rgba(166, 250, 161, 0.757) 100%);}
   
-  .Pinfo{ display:inline; margin-top: 12%;}
+  .Pinfo{ display:inline; margin-top: 12%; color:gold; font-size: large;}
 
-  p.info{
-    display: block;
-  }
+
+
+  
   
