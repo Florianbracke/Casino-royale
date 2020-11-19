@@ -17,7 +17,7 @@ var timesvulpixlost= [];
      timesGRASShasbeencalled.push("a");
 
      bellsproutpickamount = timesGRASShasbeencalled.length;
-     document.getElementById("bellsproutpickamount").innerHTML = Number(bellsproutpickamount) ;
+     document.getElementById("bellsproutpickamount").innerHTML = (" ") + Number(bellsproutpickamount) ;
     
      if (bellsprouthp < Number(1)){ 
      alert("bellsprout fainted and is unable to perform your slavery");
@@ -37,7 +37,7 @@ var timesvulpixlost= [];
  }  
  else if (randomNumber == 3){ //here player loses
     timesbellsproutlost.push("a");
-    document.getElementById("bellsprouthp").innerHTML = bellsprouthp = Number(6- (timesbellsproutlost.length)) ;
+    document.getElementById("bellsprouthp").innerHTML = bellsprouthp = (" ") + Number(6- (timesbellsproutlost.length)) ;
 
     document.getElementById("yourpick").innerHTML ="Bellsprout";
     document.getElementById("pcpick").innerHTML = "Vulpix";
@@ -53,7 +53,7 @@ var timesvulpixlost= [];
     timesWATERhasbeencalled.push("b");
 
     goldeenpickamount = timesWATERhasbeencalled.length;
-    document.getElementById("goldeenpickamount").innerHTML = Number(goldeenpickamount) ;
+    document.getElementById("goldeenpickamount").innerHTML =  (" ") + Number(goldeenpickamount) ;
     if (goldeenhp < Number(1)){ 
       alert("goldeen fainted and is unable to perform your slavery");
       document.getElementById("goldeenhp").innerHTML = "OMG YOU KILLED HIM";}
@@ -61,7 +61,7 @@ var timesvulpixlost= [];
 // ---statements
 if (randomNumber == 1) { //here player loses
     timesgoldeenlost.push("a");
-    document.getElementById("goldeenhp").innerHTML = goldeenhp = Number(6- (timesgoldeenlost.length)) ;
+    document.getElementById("goldeenhp").innerHTML = goldeenhp = (" ") + Number(6- (timesgoldeenlost.length)) ;
     document.getElementById("yourpick").innerHTML ="Goldeen";
     document.getElementById("pcpick").innerHTML = "Bellsprout";
     document.getElementById("battle").innerHTML = "with water vs grass, Goldeen took damage";
@@ -87,7 +87,7 @@ function fire(){
     timesFIREhasbeencalled.push("c");
 
     vulpixpickamount = timesFIREhasbeencalled.length;
-    document.getElementById("vulpixpickamount").innerHTML = Number(vulpixpickamount) ;
+    document.getElementById("vulpixpickamount").innerHTML =  (" ") + Number(vulpixpickamount) ;
     if (vulpixhp < Number(1)){ 
       alert("vulpix fainted and is unable to perform your slavery")
       document.getElementById("vulpixhp").innerHTML = "OMG YOU KILLED HIM";}
@@ -100,7 +100,7 @@ if (randomNumber == 1) {
 }
 else if (randomNumber == 2){ //here player loses
    timesvulpixlost.push("a");
-   document.getElementById("vulpixhp").innerHTML = vulpixhp = Number(6- (timesvulpixlost.length)) ;
+   document.getElementById("vulpixhp").innerHTML = vulpixhp =  (" ") + Number(6- (timesvulpixlost.length)) ;
    document.getElementById("yourpick").innerHTML ="Vulpix";
    document.getElementById("pcpick").innerHTML = "Goldeen";
    document.getElementById("battle").innerHTML = "with fire vs water, Vulpix took damage!";
