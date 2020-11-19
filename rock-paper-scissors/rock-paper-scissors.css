@@ -3,7 +3,7 @@
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(71,252,24,1) 25%, rgba(40,150,237,1) 50%, rgba(255,0,0,1) 75%, rgba(0,0,0,0) 100%);
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 2fr;
     gap: 5% 5%;
     grid-template-areas:
         "empty1   bellsproutimg  goldeenimg     vulpiximg  empty2"
@@ -12,9 +12,9 @@
         "empty1   gary         garyoption     empty3     empty2"
         "empty1   empty4         outcome        empty3     empty2";
     }
-  .ash{grid-area: ash; padding-left: 150px; }
+  .ash{grid-area: ash;  }
 
-  .gary{grid-area: gary; padding-left: 150px; }
+  .gary{grid-area: gary;}
 
   .emptydiv1 {grid-area: empty1; }
 
@@ -49,6 +49,9 @@
   button {background: rgb(131, 251, 255);
     background: radial-gradient(circle, rgb(144, 250, 253) 0%, rgba(166, 250, 161, 0.757) 100%);}
   
-  p{ display:inline; text-align: left; margin-top: 12%;}
+  .Pinfo{ display:inline; margin-top: 12%;}
 
+  p.info{
+    display: block;
+  }
   
