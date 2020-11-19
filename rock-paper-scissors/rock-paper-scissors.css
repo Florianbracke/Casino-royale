@@ -1,0 +1,54 @@
+.grid-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(71,252,24,1) 25%, rgba(40,150,237,1) 50%, rgba(255,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    gap: 5% 5%;
+    grid-template-areas:
+        "empty1   bellsproutimg  goldeenimg     vulpiximg  empty2"
+        "empty1   n-1            n-2            n-3        empty2"
+        "empty1   ash         playeroption   empty3     empty2"
+        "empty1   gary         garyoption     empty3     empty2"
+        "empty1   empty4         outcome        empty3     empty2";
+    }
+  .ash{grid-area: ash; padding-left: 150px; }
+
+  .gary{grid-area: gary; padding-left: 150px; }
+
+  .emptydiv1 {grid-area: empty1; }
+
+  .emptydiv2 {grid-area: empty2; }
+
+  .emptydiv3 {grid-area: empty3; }
+
+  .emptydiv4 {grid-area: empty4; }
+
+  .bellsproutimg {grid-area: bellsproutimg; }
+
+  .goldeenimg {grid-area: goldeenimg; }
+
+  .vulpiximg {grid-area: vulpiximg; }
+
+  .n-1 { grid-area: n-1; }
+  
+  .n-2 { grid-area: n-2; }
+  
+  .n-3 { grid-area: n-3; }
+  
+  .playeroption { grid-area: playeroption; }
+  
+  .garyoption { grid-area: garyoption; }
+  
+  .outcome { grid-area: outcome; }
+  
+  img{width: 100px; height: 100px; margin:auto; display:block; border-radius: 50%;object-fit: scale-down;}
+
+  
+
+  button {background: rgb(131, 251, 255);
+    background: radial-gradient(circle, rgb(144, 250, 253) 0%, rgba(166, 250, 161, 0.757) 100%);}
+  
+  p{ display:inline; text-align: left; margin-top: 12%;}
+
+  

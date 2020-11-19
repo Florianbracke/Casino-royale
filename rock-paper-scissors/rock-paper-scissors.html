@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="rock-paper-scissors.js"></script>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="emptydiv1"></div>
+        
+        <button class="n-1" id="n-1" onclick="grass();">Bellsprout, I choose you!</button><br>
+        <button class="n-2" id="n-2" onclick="water();">Goldeen, I choose you!</button><br>
+        <button class="n-3" id="n-3" onclick="fire();">Vulpix, I choose you!</button><br>
+        <br><br>
+
+        <div class="playeroption"><strong>You picked:</strong><br>
+            <p id="yourpick"></p>
+        </div>
+
+        <div class="garyoption"><strong>That ugly guy Gary picked:</strong><br>
+        <p id="pcpick"></p>
+        </div>
+
+        <div class="outcome"><strong>There was an epic battle:</strong><br>
+        <p id="battle"></p>
+        </div>
+
+        <div class="bellsproutimg"> <img class="img1" src="bellsprout.png" alt="bellsrpout"></div>
+        <div class="goldeenimg"><img class="img2" src="goldeen.png" alt="goldeen"></div>  
+        <div class="vulpiximg"><img class="img3" src="vulpix.png" alt="vulpix"></div>
+        
+        <div class="emptydiv2"></div>
+
+        <div class="emptydiv3"><strong>Bellsprouts hp:</strong><p id="bellsprouthp"></p><br>
+                               <strong>Goldeen hp:</strong><p id="goldeenhp"></p> <br>
+                               <strong>Vulpix hp:</strong><p id="vulpixhp"></p>
+                            </div>
+
+        <div class="emptydiv4"></div>
+        <div class="ash"><img src="ash.png" alt="ash"><p> your pokemon each have 6 hp, every loss results in -1 hp!</p></div>
+        <div class="gary"><img src="Gary.png" alt="gary"><p>Gary cheats (for now huehuehue) and his pokemon are invincable..!</p></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
