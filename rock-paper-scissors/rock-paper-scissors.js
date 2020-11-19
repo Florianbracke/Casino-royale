@@ -20,8 +20,8 @@ var timesvulpixlost= [];
      document.getElementById("bellsproutpickamount").innerHTML = Number(bellsproutpickamount) ;
     
      if (bellsprouthp < Number(1)){ 
-     alert("bellsprout fainted and is unable to perform your slavery")
-   }
+     alert("bellsprout fainted and is unable to perform your slavery");
+     document.getElementById("bellsprouthp").innerHTML = "OMG YOU KILLED HIM";}
 // -------------------------------- 
 // ---statements
  if (randomNumber == 1) {
@@ -55,7 +55,8 @@ var timesvulpixlost= [];
     goldeenpickamount = timesWATERhasbeencalled.length;
     document.getElementById("goldeenpickamount").innerHTML = Number(goldeenpickamount) ;
     if (goldeenhp < Number(1)){ 
-      alert("goldeen fainted and is unable to perform your slavery")}
+      alert("goldeen fainted and is unable to perform your slavery");
+      document.getElementById("goldeenhp").innerHTML = "OMG YOU KILLED HIM";}
 // --------------------------------
 // ---statements
 if (randomNumber == 1) { //here player loses
@@ -88,25 +89,21 @@ function fire(){
     vulpixpickamount = timesFIREhasbeencalled.length;
     document.getElementById("vulpixpickamount").innerHTML = Number(vulpixpickamount) ;
     if (vulpixhp < Number(1)){ 
-      alert("bellsprout fainted and is unable to perform your slavery")}
+      alert("vulpix fainted and is unable to perform your slavery")
+      document.getElementById("vulpixhp").innerHTML = "OMG YOU KILLED HIM";}
 // --------------------------------
 // ---statements
 if (randomNumber == 1) {
     document.getElementById("yourpick").innerHTML ="Vulpix";
     document.getElementById("pcpick").innerHTML = "Bellsprout";
     document.getElementById("battle").innerHTML = "with fire vs grass, Bellsprout took damage! Smart move!";
-    
 }
 else if (randomNumber == 2){ //here player loses
    timesvulpixlost.push("a");
    document.getElementById("vulpixhp").innerHTML = vulpixhp = Number(6- (timesvulpixlost.length)) ;
-
    document.getElementById("yourpick").innerHTML ="Vulpix";
    document.getElementById("pcpick").innerHTML = "Goldeen";
    document.getElementById("battle").innerHTML = "with fire vs water, Vulpix took damage!";
-  
-   
-    
 }  
 else if (randomNumber == 3){
    document.getElementById("yourpick").innerHTML ="Vulpix";
