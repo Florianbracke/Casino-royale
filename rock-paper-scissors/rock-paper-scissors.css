@@ -3,8 +3,8 @@
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(71,252,24,1) 25%, rgba(40,150,237,1) 50%, rgba(255,0,0,1) 75%, rgba(0,0,0,0) 100%);
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 2fr;
-    gap: 5% 5%;
+    grid-template-rows: 0.5fr 0.2fr 1fr 1fr 2fr;
+    gap: 0% 5%;
     grid-template-areas:
         "empty1   bellsproutimg  goldeenimg     vulpiximg  empty2"
         "empty1   n-1            n-2            n-3        empty2"
