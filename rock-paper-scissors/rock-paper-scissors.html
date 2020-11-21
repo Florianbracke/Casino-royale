@@ -13,43 +13,74 @@
 <body>
     <div class="grid-container">
         <div class="emptydiv1"></div>
-        
+
         <button class="n-1" id="n-1" onclick="grass();">Bellsprout, I choose you!</button><br>
         <button class="n-2" id="n-2" onclick="water();">Goldeen, I choose you!</button><br>
         <button class="n-3" id="n-3" onclick="fire();">Vulpix, I choose you!</button><br>
-        <br><br>
+       
 
-        <div class="playeroption"><strong>You picked:</strong><br><br>
-            <p class="Pinfo" id="yourpick" ></p>
+        <div class="playeroption"><strong>You picked:</strong><br>
+            <p class="Pinfo" id="yourpick"></p>
+            <div class="garyoption"><strong>That ugly guy Gary picked:</strong><br>
+                <p id="pcpick" class="Pinfo"></p>
+            </div>
+            <div class="outcome"><strong>There was an epic battle:</strong><br>
+                <p class="Pinfo" id="battle"></p>
+            </div>
         </div>
 
-        <div class="garyoption"><strong>That ugly guy Gary picked:</strong><br><br>
-        <p id="pcpick" class="Pinfo"></p>
-        </div>
+        <div class="bellsproutimg"> <img class="ashpokemonimg img1" src="bellsprout.png" alt="bellsrpout"></div>
+        <div class="goldeenimg"><img class="ashpokemonimg img2" src="goldeen.png" alt="goldeen"></div>
+        <div class="vulpiximg"><img class="ashpokemonimg img3" src="vulpix.png" alt="vulpix"></div>
 
-        <div class="outcome"><strong>There was an epic battle:</strong><br><br>
-        <p class="Pinfo" id="battle"></p>
-        </div>
-
-        <div class="bellsproutimg"> <img class="img1" src="bellsprout.png" alt="bellsrpout"></div>
-        <div class="goldeenimg"><img class="img2" src="goldeen.png" alt="goldeen"></div>  
-        <div class="vulpiximg"><img class="img3" src="vulpix.png" alt="vulpix"></div>
-        
         <div class="emptydiv2"></div>
 
-        <div class="emptydiv3"> <hr><strong>Bellsprout hp:</strong><p class="Pinfo" id="bellsprouthp"> 6</p><br> 
-                                <hr><strong># you picked Bellsprout :</strong><p class="Pinfo" id="bellsproutpickamount"> </p><br> <br> 
-                                <hr><strong>Goldeen hp:</strong><p class="Pinfo" id="goldeenhp"> 6</p><br> 
-                                <hr><strong># you picked Goldeen:</strong><p class="Pinfo" id="goldeenpickamount"> </p> <br><br> 
-                                <hr><strong>Vulpix hp:</strong><p class="Pinfo" id="vulpixhp"> 6</p><br> 
-                                <hr><strong># you picked Vulpix:</strong><p class="Pinfo" id="vulpixpickamount"> </p>
-                            </div>
-
-        <div class="emptydiv4"></div>
-        <div class="ash"><img src="ash.png" alt="ash"><p class="info"> Your pokemon each have 6 hp, every loss results in -1 hp!<br> 
-        If you pokemon's HP reaches 0, it will faint!</p></div>
-        <div class="gary"><img src="Gary.png" alt="gary"><p class="info">Gary cheats (for now huehuehue) and his pokemon are invincable..!</p></div>
+        <div class="emptydiv3">
+            <hr><strong>Bellsprout hp:</strong>
+            <p class="Pinfo" id="bellsprouthp"> 6</p><br>
+            <hr><strong># you picked Bellsprout :</strong>
+            <p class="Pinfo" id="bellsproutpickamount"> </p><br> <br>
+            <hr><strong>Goldeen hp:</strong>
+            <p class="Pinfo" id="goldeenhp"> 6</p><br>
+            <hr><strong># you picked Goldeen:</strong>
+            <p class="Pinfo" id="goldeenpickamount"> </p> <br><br>
+            <hr><strong>Vulpix hp:</strong>
+            <p class="Pinfo" id="vulpixhp"> 6</p><br>
+            <hr><strong># you picked Vulpix:</strong>
+            <p class="Pinfo" id="vulpixpickamount"> </p>
         </div>
+
+        <div class="emptydiv4">SCOREBOARD<p id="scorecountplayer">0</p>/<p id="scorecountgary">0</p></div>
+        <div class="ash"><img src="ash.png" alt="ash">
+            <p class="info"> Your pokemon each have 6 hp, every loss results in -1 hp!<br>
+                If you pokemon's HP reaches 0, it will faint!</p>
+        </div>
+        <div class="gary"><img src="Gary.png" alt="gary">
+            <p class="info">This is Gary and he is known to be an overly confident pokemon trainer.
+                He gets all the girls, even your mom is fond of him.
+                Naturally, you are quite jealous about that and also you want to be the better pokemon trainer
+            </p>
+        </div>
+        <div class="yourpokemon"><img id="yourpickhere" src="battleimg.png" alt="2"></div>
+        <div class="garypokemon"><img id="garypickhere" src="battleimg.png" alt="2"></div>
+
+        <div class="emptydiv5">
+            <hr><strong>Gary's Bellsprout hp:</strong>
+            <p class="Pinfo" id="garybellsprouthp"> 6</p><br>
+            <hr><strong># Gary picked Bellsprout :</strong>
+            <p class="Pinfo" id="garybellsproutpickamount"> </p><br> <br>
+            <hr><strong>Gary's Goldeen hp:</strong>
+            <p class="Pinfo" id="garygoldeenhp"> 6</p><br>
+            <hr><strong># Gary picked Goldeen:</strong>
+            <p class="Pinfo" id="garygoldeenpickamount"> </p> <br><br>
+            <hr><strong>Gary's Vulpix hp:</strong>
+            <p class="Pinfo" id="garyvulpixhp"> 6</p><br>
+            <hr><strong># Gary picked Vulpix:</strong>
+            <p class="Pinfo" id="garyvulpixpickamount"> </p>
+        </div>
+
+
+    </div>
     </div>
 
 </body>

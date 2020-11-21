@@ -8,21 +8,27 @@
     grid-template-areas:
         "empty1   bellsproutimg  goldeenimg     vulpiximg  empty2"
         "empty1   n-1            n-2            n-3        empty2"
-        "empty1   ash         playeroption   empty3     empty2"
-        "empty1   gary         garyoption     empty3     empty2"
-        "empty1   empty4         outcome        empty3     empty2";
+        "empty1   ash            yourpokemon    empty3     empty2"
+        "empty1   empty4         playeroption   empty3     empty2"
+        "empty1   gary           garypokemon    empty5     empty2";
     }
-  .ash{grid-area: ash;  }
+  .ash{grid-area: ash; font-size: 12px; line-height: 12px;  }
 
-  .gary{grid-area: gary;}
+  .gary{grid-area: gary; font-size: 12px; line-height: 12px;}
 
   .emptydiv1 {grid-area: empty1; }
 
   .emptydiv2 {grid-area: empty2; }
 
-  .emptydiv3 {grid-area: empty3; }
+  .emptydiv3 {grid-area: empty3; font-size: 12px; line-height: 12px; }
 
   .emptydiv4 {grid-area: empty4; }
+
+  .emptydiv5 {grid-area: empty5; font-size: 12px; line-height: 12px; }  
+
+  .yourpokemon {grid-area: yourpokemon;}
+
+  .garypokemon {grid-area: garypokemon;}
 
   .bellsproutimg {grid-area: bellsproutimg; }
 
@@ -44,10 +50,15 @@
   
   img{width: 100px; height: 100px; margin:auto; display:block; border-radius: 50%;object-fit: scale-down;}
 
+  .ashpokemonimg {
+    width: 75px; height: 75px;
+  }
   
 
   button {background: rgb(245,245,245);
-    background: radial-gradient(circle, rgba(245,245,245,1) 0%, rgba(205,132,209,1) 100%);}
+    background: radial-gradient(circle, rgba(245,245,245,1) 0%, rgba(205,132,209,1) 100%);
+  height: 20px;
+width: 180px;}
   
   .Pinfo{ display:inline; margin-top: 12%; color:rgb(179, 42, 156); font-size: large;}
 
