@@ -1,3 +1,9 @@
+
+// TO DO 
+// -check out return function for "IF pokemon faints" 
+// -call functions more efficiently ->  *put functions & variables in different file
+//                                      *call them on main .js fail
+
 //bellsprout variables
 var timesGRASShasbeencalled       = [];
 var timesbellsproutlost           = [];
