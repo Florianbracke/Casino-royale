@@ -234,9 +234,9 @@ if (randomNumber == 1) {//here gary bellsprout loses
     document.getElementById("garybellsprouthp").innerHTML = garybellsprouthp = (" ") + Number(6- (garytimesbellsproutlost.length));  
   
     // garry count bellsprout          -> needs to be function inside function or seperate function
-    garytimesWATERhasbeencalled.push("a");
-    garybellsproutpickamount = garytimesWATERhasbeencalled.length;
-    document.getElementById("garybellsproutpickamount").innerHTML = garytimesWATERhasbeencalled.length;
+    garytimesGRASShasbeencalled.push("a");
+    garybellsproutpickamount = garytimesGRASShasbeencalled.length;
+    document.getElementById("garybellsproutpickamount").innerHTML = garytimesGRASShasbeencalled.length;
 
     document.getElementById("yourpick").innerHTML ="Vulpix";
     document.getElementById("pcpick").innerHTML = "Bellsprout"; 
@@ -249,7 +249,7 @@ else if (randomNumber == 2){//here player loses
    scorecountgary.push("x");
    document.getElementById("scorecountgary").innerHTML =  scorecountgary.length;
    
-   // times vulpix lost
+   // player vulpix -1hp
    timesvulpixlost.push("a");
    document.getElementById("vulpixhp").innerHTML = vulpixhp = (" ") + Number(6- (timesvulpixlost.length)) ;
 

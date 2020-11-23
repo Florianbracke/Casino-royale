@@ -2,8 +2,8 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 3%, rgba(142,255,137,1) 16%, rgba(255,255,255,1) 38%, rgba(137,207,255,1) 50%, rgba(255,255,255,1) 62%, rgba(252,117,65,1) 87%, rgba(242,242,242,1) 97%);
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 0.5fr 0.2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 0.5fr 1fr;
     gap: 0% 5%;
     grid-template-areas:
         "empty1   bellsproutimg  goldeenimg     vulpiximg  empty2"
