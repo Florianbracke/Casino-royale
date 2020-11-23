@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="Casino-royale.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casino-Royale</title>
+    <link rel="stylesheet" href="guessing-game.css">
 </head>
+
 <body>
 
-    <form onsubmit="game()">
-        Enter a number between 1 & 22 to win a fabulous price! 
-        <input type="text" id="guess" name="playerguess">
-        <input type="submit"  value="Submit">
-      </form>
+    <div class="container">
+
+        <div class="leftbanner">
+            <div class="button button1"><button> <a href="file:///C:/Users/flori/Desktop/BeCode/challenges/JS/Casino-royale/index.html" class="button"> Go to our main page</a><br><br></button></div>
+            <div class="button button2"><button><a href="file:///C:/Users/flori/Desktop/BeCode/challenges/JS/Casino-royale/rock-paper-scissors/rock-paper-scissors.html" class="button">Try your luck at pokemon!</a></button></div>
+            <div class="button button3"><button><a href="Casino-royale/blackjack/blackjack.html" class="button">Join us at Blackjack!</a></button></div>
+        </div>
+
+        <div class="maincolumn">
+            <div class="header">
+                <p>Welcome traveler!  <br> 
+                    Do you have the dream to start a restaurant at the end of the Universe?
+                    Or do you truly want to die by injecting liquid gold into your veins? <br> 
+                    Boy-o-boy what a great coincedence. We are a casino!! <br>  <br> 
+                    You can win tons of cool stuff and perhaps even money.
+                    <br> 
+                    Allow yourself to place you weary buttcheeks on the nearest comfortable surface and
+                    ponder about what you are going to do with all that easy-earned cash.
+                    <br>  <br>  We highly suggest to accomodate that thoughtflow with some hot leaf juice and to invest
+                    in a good towel because those things come in darn handy. 
+
+            </p>
+            </div>
+            <div class="intro"> The golden question, with a rather beneficial probability since you get FIVE tires:
+               <strong>"What is the answer to life the universe and everything?"</strong>
+            </div><br>
+            <div class="game">
+                <form onsubmit="game()">
+                    Enter a number between 1 & 100 to win a fabulous price!
+                    <input type="text" id="guess" name="playerguess">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="gamestats">
+                <div class="guessednumbers"></div> 
+            </div>
+            <div class="footer"></div>
+        </div>
+        <div class="rightbanner"> <div class="ads">your intergalactic ads go here, there and everywhere.
+        </div></div>
+
+
+    </div>
+
+
 
 </body>
+
 </html>

@@ -1,0 +1,62 @@
+body {
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,186,48,1) 10%, rgba(255,255,255,1) 25%, rgba(255,186,48,1) 50%, rgba(255,255,255,1) 75%, rgba(255,186,48,1) 90%, rgba(255,255,255,1) 95%);
+}
+
+.container {
+    display:grid ;   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "leftbanner maincolumn rightbanner" ;
+    width: 100vw;
+  height: 100vh;
+}
+
+.leftbanner{
+    
+    grid-area: leftbanner;
+    display:grid ;   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "button1"
+    "button2"
+    "button3" ;
+}
+
+.button1{grid-area: button1;}
+
+.button2{grid-area: button2;}
+
+.button3{grid-area: button3;}
+
+button{
+    margin-left: 28%;
+    margin-top: 5%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+}
+
+.rightbanner{grid-area: rightbanner;}
+
+.ads{ 
+    background-color: white;
+    opacity: 0.6;
+    margin-left: 30%;
+    height: 100vh;
+    width: 10vw;
+
+}
+
+.maincolumn{
+    grid-area: maincolumn;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}

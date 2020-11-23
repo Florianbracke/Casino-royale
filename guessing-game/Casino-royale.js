@@ -12,7 +12,7 @@ function game() {
     const playerguess = document.getElementById("guess").value;
 
     if (playerguess == luckynumber)
-        {alert("omg you ARE the lucky winner, treat yourself to a drink!");
+        {alert("omg you ARE the lucky winner, treat yourself to a drink in our newly renovated drinkroom!!");
     }
     else if (playerguess == (luckynumber + 1))
         {alert("close, but yet so far!");
@@ -21,5 +21,5 @@ function game() {
         {alert("close, but yet so far!");
     }
     else 
-        {alert("you couldnt be more wrong! The answer was " + luckynumber + ". Maybe more luck next time");}
+        {alert("you couldnt be more wrong! Maybe more luck next time");}
   }
